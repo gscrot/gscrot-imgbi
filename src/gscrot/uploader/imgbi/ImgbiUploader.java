@@ -6,10 +6,10 @@ import com.redpois0n.gscrot.Capture;
 import com.redpois0n.gscrot.CaptureUploader;
 import com.redpois0n.gscrot.UploadResponse;
 
-public class Uploader extends CaptureUploader {
+public class ImgbiUploader extends CaptureUploader {
 	
-	public Uploader() {
-		super("Imgbi", IconUtils.getIcon("imgbi", Uploader.class));
+	public ImgbiUploader() {
+		super("Imgbi", IconUtils.getIcon("imgbi", ImgbiUploader.class));
 	}
 
 	@Override

@@ -8,7 +8,7 @@ public class ImgbiPlugin extends Plugin {
 
 	public ImgbiPlugin() {
 		super("Imgbi");
-		CaptureUploader.addUploader(new Uploader());
+		CaptureUploader.addUploader(new ImgbiUploader());
 	}
 
 }
