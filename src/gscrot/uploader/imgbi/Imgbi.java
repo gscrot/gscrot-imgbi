@@ -12,7 +12,7 @@ public class Imgbi {
 	
 	public static String upload(BufferedImage image) throws Exception {
 		File file = File.createTempFile("imgbiupload", ".png");
-		
+		System.out.println(file.getAbsolutePath());
 		FileOutputStream fos = new FileOutputStream(file);
 		ImageIO.write(image, "png", fos);
 		fos.close();
@@ -20,7 +20,6 @@ public class Imgbi {
 		String response = upload(file);
 		
 		file.delete();
-		
 		return response;
 	}
 	
