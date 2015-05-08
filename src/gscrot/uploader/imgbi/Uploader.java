@@ -14,7 +14,11 @@ public class Uploader extends CaptureUploader {
 
 	@Override
 	public void process(BufferedImage image) {
-		// TODO
+		try {
+			Imgbi.upload(image);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 }
