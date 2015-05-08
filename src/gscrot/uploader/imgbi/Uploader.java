@@ -9,7 +9,7 @@ import com.redpois0n.gscrot.CaptureUploader;
 public class Uploader extends CaptureUploader {
 	
 	public Uploader() {
-		super("Imgbi", IconUtils.getIcon("Imgbi", Uploader.class));
+		super("Imgbi", IconUtils.getIcon("imgbi", Uploader.class));
 	}
 
 	@Override
