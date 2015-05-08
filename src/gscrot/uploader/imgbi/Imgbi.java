@@ -10,9 +10,22 @@ import javax.imageio.ImageIO;
 
 public class Imgbi {
 	
+	public static String upload(byte[] b) throws Exception {
+		File file = File.createTempFile("imgbiupload", ".dat");
+
+		FileOutputStream fos = new FileOutputStream(file);
+		fos.write(b);
+		fos.close();
+		
+		String response = upload(file);
+		
+		file.delete();
+		return response;
+	}
+	
 	public static String upload(BufferedImage image) throws Exception {
 		File file = File.createTempFile("imgbiupload", ".png");
-		System.out.println(file.getAbsolutePath());
+
 		FileOutputStream fos = new FileOutputStream(file);
 		ImageIO.write(image, "png", fos);
 		fos.close();
