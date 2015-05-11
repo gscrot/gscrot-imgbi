@@ -8,4 +8,11 @@ API documentation from [imgbi-client](https://github.com/imgbi/imgbi-client)
 
 - npm
 - Node.js
-- imgbi-client
+- [imgbi-client](https://github.com/imgbi/imgbi-client)
+
+### imgbi-client
+
+Tested on
+	- Linux
+
+If you cannot upload images, make sure imagemagick is installed. If not, install it using your package manager.
