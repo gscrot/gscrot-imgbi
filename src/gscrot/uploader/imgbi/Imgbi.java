@@ -51,7 +51,9 @@ public class Imgbi {
 		String line;
 		
 		while ((line = reader.readLine()) != null) {
-			response += line + "\n";
+			if (line.startsWith("https://img.bi/")) {
+				response += line + "\n";
+			}
 		}
 		
 		reader.close();
