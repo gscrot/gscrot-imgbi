@@ -15,7 +15,7 @@ public class ImgbiUploader extends CaptureUploader {
 	@Override
 	public UploadResponse process(Capture capture) throws Exception {
 		String response = Imgbi.upload(capture.getBinary());
-		
+
 		if (response.startsWith("ERROR: ")) {
 			throw new Exception(response);
 		} else {

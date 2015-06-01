@@ -11,7 +11,7 @@ import javax.imageio.ImageIO;
 public class Imgbi {
 	
 	public static String upload(byte[] b) throws Exception {
-		File file = File.createTempFile("imgbiupload", ".dat");
+		File file = File.createTempFile("imgbiupload", ".png");
 
 		FileOutputStream fos = new FileOutputStream(file);
 		fos.write(b);
